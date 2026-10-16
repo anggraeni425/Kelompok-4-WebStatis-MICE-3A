@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charmia Studio - Italian Charm Bracelet Customizer</title>
+    <link rel="stylesheet" href="Website_Jualan.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+   
+    <div class="announcement-bar">
+        ✨ Buat gelang impianmu sekarang — Kustomisasi tanpa batas di Charmia Studio! 💖
+    </div>
+
+    
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="menu-toggle" id="menuToggle"><i class="fa-solid fa-bars"></i></button>
+                <nav class="nav-links" id="navLinks">
+                    <a href="#shop">Shop</a>
+                    <a href="#builder">Charm Builder</a>
+                    <a href="#how-it-works">How It Works</a>
+                    <a href="#about">About Us</a>
+                </nav>
+            </div>
+            
+            <div class="nav-logo">
+                <h2>Charmia Studio</h2>
+            </div>
+
+            <div class="nav-right">
+                <div class="currency-selector">
+                    <span>IDR under 200.000</span>
+                </div>
+                <a href="#search" class="nav-icon"><i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#cart" class="nav-icon cart-icon"><i class="fa-solid fa-bag-shopping"></i><span class="cart-badge">0</span></a>
+            </div>
+        </div>
+    </header>
+
+  
+    <section class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content">
+                <span class="hero-subtitle">Express Yourself with Every Charm</span>
+                <h1>Build Your Italian<br>Charm Bracelet</h1>
+                <p>Your style, your charms, your bracelet.</p>
+                <a href="#builder" class="btn-primary">Create Your Bracelet</a>
+            </div>
+           
+            <div class="hero-image-placeholder">
+                <div class="upload-hint">
+                    <i class="fa-regular fa-image"></i>
+                        <img src="Home.jpeg" alt="Hero Image" class="hero-image">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section class="categories-section" id="shop">
+        <div class="container">
+            <div class="category-grid">
+                
+                <div class="category-card">
+                    <div class="category-image-box">
+                        <img src="Charm.jpeg" alt="Charms" class="category-image">
+                    </div>
+                    
+                    <div class="category-info">
+                        <h3>Charms</h3>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image-box">
+                        <img src="BracelateGold.jpeg" alt="Bracelets" class="category-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Bracelets</h3>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image-box">
+                        <img src="watch.jpeg" alt="Watches" class="category-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Watches</h3>
+                    </div>
+                </div>
+
+                <div class="category-card">
+                    <div class="category-image-box">
+                        <img src="IMG_6881.jpeg" alt="Accessories" class="category-image">
+                    </div>
+                    <div class="category-info">
+                        <h3>Accessories</h3>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+   \
+    <section class="builder-section" id="builder">
+        <div class="container">
+            <div class="section-title">
+                <h2>Interactive Charm Builder</h2>
+                <p>Pilih gelang dan susun charm pilihanmu secara virtual sebelum memesan.</p>
+            </div>
+
+            <div class="builder-workspace">
+               
+                <div class="builder-preview-box">
+                    <div class="preview-header">
+                        <span>Pratinjau Gelang Anda</span>
+                        <span class="total-price">Rp 250.000</span>
+                    </div>
+                    <div class="bracelet-track" id="braceletTrack">
+                        <div class="charm-slot base-link"></div>
+                        <div class="charm-slot item">A</div>
+                        <div class="charm-slot item">💖</div>
+                        <div class="charm-slot item">✨</div>
+                        <div class="charm-slot base-link"></div>
+                    </div>
+                    <div class="builder-actions">
+                        <button class="btn-secondary" id="clearBtn"><i class="fa-solid fa-rotate-left"></i> Reset</button>
+                        <button class="btn-primary" id="addToCartBtn"><i class="fa-solid fa-bag-shopping"></i> Tambah ke Keranjang</button>
+                    </div>
+                </div>
+
+              
+                <div class="builder-selector-box">
+                    <div class="builder-tabs">
+                        <button class="tab-btn active" data-target="letters">Letters</button>
+                        <button class="tab-btn" data-target="symbols">Symbols</button>
+                        <button class="tab-btn" data-target="zodiac">Zodiac</button>
+                        <button class="tab-btn" data-target="minimalist">Minimalist</button>
+                    </div>
+
+                    <div class="charm-grid-selection">
+                        <div class="charm-option-card" data-name="Huruf A" data-price="45000">
+                            <div class="charm-thumb">A</div>
+                            <span class="charm-name">Letters A</span>
+                            <span class="charm-price">Rp 50.000</span>
+                        </div>
+                        <div class="charm-option-card" data-name="Love Pink" data-price="50000">
+                            <div class="charm-thumb pink">💖</div>
+                            <span class="charm-name">Pink Heart</span>
+                            <span class="charm-price">Rp 65.000</span>
+                        </div>
+                        <div class="charm-option-card" data-name="Sparkle" data-price="45000">
+                            <div class="charm-thumb">✨</div>
+                            <span class="charm-name">Sparkle Star</span>
+                            <span class="charm-price">Rp 55.000</span>
+                        </div>
+                        <div class="charm-option-card" data-name="Tulip" data-price="55000">
+                            <div class="charm-thumb">🌷</div>
+                            <span class="charm-name">Tulip Flower</span>
+                            <span class="charm-price">Rp 70.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="footer" id="about">
+        <div class="container footer-content">
+            <div class="footer-col">
+                <h3>Charmia Studio</h3>
+                <p>Temukan Italian Charm Bracelet dengan pilihan charm yang bisa kamu padukan sesuai gaya dan seleramu.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#shop">Katalog Produk</a></li>
+                    <li><a href="#builder">Charm Builder</a></li>
+                    <li><a href="#how-it-works">Panduan Ukuran</a></li>
+                    <li><a href="#about">Tentang Kami</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Customer Care</h4>
+                <ul>
+                    <li><a href="#">FAQ & Kontak</a></li>
+                    <li><a href="#">Kebijakan Pengiriman</a></li>
+                    <li><a href="#">Konfirmasi Pembayaran</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Stay Connected</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                    <a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Charmia Studio. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+
+    <script>
+        const menuToggle = document.getElementById('menuToggle');
+        const navLinks = document.getElementById('navLinks');
+        menuToggle.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+
+        const charmOptions = document.querySelectorAll('.charm-option-card');
+        const braceletTrack = document.getElementById('braceletTrack');
+
+        charmOptions.forEach(option => {
+            option.addEventListener('click', () => {
+                const charmSymbol = option.querySelector('.charm-thumb').innerText;
+                const newSlot = document.createElement('div');
+                newSlot.className = 'charm-slot item';
+                newSlot.innerText = charmSymbol;
+                braceletTrack.appendChild(newSlot);
+            });
+        });
+
+        document.getElementById('clearBtn').addEventListener('click', () => {
+            braceletTrack.innerHTML = `
+                <div class="charm-slot base-link"></div>
+                <div class="charm-slot base-link"></div>
+            `;
+        });
+    </script>
+</body>
+</html
