@@ -1,0 +1,816 @@
+/* =========================
+   PENGATURAN DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", Arial, sans-serif;
+    color: #183f2c;
+    background-color: #e5e6eb;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+
+/* =========================
+   NAVBAR
+========================= */
+
+.logo-image {
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+}
+
+.navbar {
+    width: 100%;
+    min-height: 66px;
+    padding: 10px 6.5%;
+    background-color: #f8faf8;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #174a30;
+}
+
+.logo-icon {
+    font-size: 32px;
+    line-height: 1;
+}
+
+.logo strong {
+    display: block;
+    font-size: 19px;
+    line-height: 1.1;
+}
+
+.logo small {
+    display: block;
+    font-size: 9px;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.nav-menu a {
+    font-size: 13px;
+    font-weight: 700;
+    color: #111;
+}
+
+.nav-menu a:hover {
+    color: #2c915c;
+}
+
+
+/* =========================
+   TOMBOL
+========================= */
+
+.btn {
+    display: inline-block;
+    border: none;
+    border-radius: 4px;
+    background-color: #2c915c;
+    color: white;
+    padding: 10px 20px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    background-color: #1d7045;
+}
+
+.btn-small {
+    padding: 5px 18px;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #2c915c;
+    color: #2c915c;
+}
+
+.btn-outline:hover {
+    color: white;
+}
+
+
+/* =========================
+   HERO / BERANDA
+========================= */
+
+.hero {
+    background-color: #f8faf8;
+    min-height: 435px;
+    padding: 65px 6.5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 55px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.eyebrow {
+    color: #398b60;
+    font-size: 16px;
+    font-weight: 800;
+    letter-spacing: 0.3px;
+    margin-bottom: 12px;
+}
+
+.hero h1 {
+    color: #194b32;
+    font-size: 34px;
+    line-height: 1.18;
+    margin-bottom: 15px;
+    font-weight: 800;
+}
+
+.hero-description {
+    max-width: 430px;
+    font-size: 12px;
+    color: #202020;
+    margin-bottom: 38px;
+}
+
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.hero-image {
+    flex: 1.05;
+    height: 295px;
+    border-radius: 42px;
+    overflow: hidden;
+    box-shadow: 18px 18px 0 #2c915c;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* =========================
+   KATALOG VENUE
+========================= */
+
+.section-gray {
+    background-color: #e5e6eb;
+}
+
+.catalog {
+    padding: 55px 6.5% 65px;
+}
+
+.section-heading {
+    max-width: 570px;
+    margin-bottom: 32px;
+}
+
+.section-heading h2,
+.about h2 {
+    font-size: 30px;
+    line-height: 1.25;
+    color: #194b32;
+    margin-bottom: 12px;
+}
+
+.section-heading > p:last-child {
+    color: #202020;
+    font-size: 13px;
+}
+
+.venue-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px 65px;
+}
+
+.venue-card {
+    background-color: #f8faf8;
+    border-radius: 22px;
+    padding: 17px 16px 25px;
+    min-height: 335px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.venue-card > img {
+    width: 100%;
+    height: 145px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 12px;
+}
+
+.venue-card h3 {
+    color: #194b32;
+    font-size: 14px;
+    line-height: 1.35;
+    margin-bottom: 2px;
+}
+
+.venue-location {
+    color: #111;
+    font-size: 11px;
+    margin-bottom: 27px;
+}
+
+.facility-list {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.facility-list span {
+    flex: 1;
+    min-height: 38px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 4px;
+    border-radius: 5px;
+    background-color: #a6e2c4;
+    color: #174a30;
+    font-size: 9px;
+    line-height: 1.3;
+}
+
+
+/* =========================
+   ACCESSIBILITY MATCHER
+========================= */
+
+.matcher {
+    padding: 45px 5.5% 65px;
+}
+
+.matcher .section-heading {
+    margin-left: 2%;
+    margin-bottom: 18px;
+}
+
+.matcher-box {
+    background-color: #f8faf8;
+    border-radius: 22px;
+    padding: 28px 5%;
+    min-height: 335px;
+}
+
+.form-title {
+    display: block;
+    color: #398b60;
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.matcher-box input[type="text"] {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 0 10px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+.matcher-box input::placeholder {
+    color: #999;
+    font-weight: 600;
+}
+
+.facility-title {
+    margin-top: 30px;
+    margin-bottom: 12px;
+}
+
+.checkbox-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px 35px;
+    color: #222;
+    font-size: 12px;
+}
+
+.checkbox-grid label {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+
+.checkbox-grid input {
+    width: 21px;
+    height: 21px;
+    accent-color: #2c915c;
+}
+
+.matcher-button {
+    margin-top: 30px;
+    padding: 8px 16px;
+    font-size: 11px;
+}
+
+
+/* =========================
+   KONTAK DAN MASUKAN
+========================= */
+
+.contact-section {
+    background-color: #e5e6eb;
+    padding: 30px 5.5% 55px;
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 30px;
+    align-items: center;
+}
+
+.contact-info > .eyebrow {
+    margin-left: 5px;
+}
+
+.contact-info-card {
+    background-color: #f8faf8;
+    border-radius: 20px;
+    min-height: 340px;
+    padding: 20px;
+}
+
+.contact-info-card h2 {
+    color: #194b32;
+    font-size: 27px;
+    margin-bottom: 12px;
+}
+
+.contact-info-card p {
+    color: #222;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-info-card hr {
+    width: 65%;
+    border: 0;
+    border-top: 1px solid #888;
+    margin: 15px 0;
+}
+
+.contact-detail {
+    margin-top: 5px;
+}
+
+.contact-form {
+    background-color: #2c915c;
+    border-radius: 20px;
+    padding: 25px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: white;
+}
+
+.contact-form label {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    border: none;
+    border-radius: 9px;
+    background-color: #fff;
+    padding: 11px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    outline: none;
+    resize: vertical;
+}
+
+.contact-form input {
+    height: 39px;
+    margin-bottom: 4px;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #999;
+    font-weight: 600;
+}
+
+.btn-dark {
+    align-self: flex-start;
+    background-color: #155538;
+    margin-top: 8px;
+    padding: 8px 18px;
+}
+
+.btn-dark:hover {
+    background-color: #0d3d27;
+}
+
+
+/* =========================
+   TENTANG KAMI DAN SDGS
+========================= */
+
+.about {
+    padding: 45px 5.5% 65px;
+}
+
+.about > .eyebrow {
+    margin-left: 5px;
+    font-size: 22px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 28px;
+}
+
+.about-card {
+    background-color: #f8faf8;
+    border-radius: 20px;
+    padding: 25px;
+    min-height: 315px;
+}
+
+.about-card h3 {
+    color: #194b32;
+    font-size: 19px;
+    margin-bottom: 20px;
+}
+
+.about-card > p {
+    color: #222;
+    font-size: 10px;
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.text-link {
+    color: #194b32;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.sdg-card h3 {
+    color: #398b60;
+    margin-bottom: 5px;
+}
+
+.sdg-subtitle {
+    font-weight: 600;
+}
+
+.sdg-item {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    margin: 15px 0;
+}
+
+.sdg-number {
+    min-width: 78px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    color: white;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.sdg-red {
+    background-color: #f52d59;
+}
+
+.sdg-orange {
+    background-color: #ff922e;
+}
+
+.sdg-item strong {
+    color: #111;
+    font-size: 12px;
+}
+
+.sdg-item p {
+    color: #222;
+    font-size: 10px;
+    line-height: 1.4;
+    margin-top: 3px;
+}
+
+
+/* =========================
+   MANFAAT ACCESS+
+========================= */
+
+.benefits {
+    text-align: center;
+    padding: 85px 10px 20px;
+}
+
+.benefit-label {
+    color: #111;
+    font-size: 11px;
+    font-weight: 800;
+}
+
+.benefits h2 {
+    font-size: 21px;
+    margin: 0 0 5px;
+}
+
+.benefit-description {
+    color: #333;
+    font-size: 11px;
+    max-width: 500px;
+    margin: 0 auto 42px;
+}
+
+.benefit-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.benefit-card {
+    background-color: #f8faf8;
+    border-radius: 20px;
+    padding: 25px 15px 20px;
+    position: relative;
+}
+
+.benefit-number {
+    position: absolute;
+    top: -27px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    background-color: #087344;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.benefit-card h3 {
+    color: #194b32;
+    font-size: 16px;
+    margin-bottom: 7px;
+}
+
+.benefit-card p {
+    color: #222;
+    font-size: 11px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #f8faf8;
+    margin: 0 5.5% 25px;
+    padding: 25px;
+    border-radius: 20px;
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    gap: 25px;
+    color: #222;
+}
+
+.footer-brand p {
+    font-size: 10px;
+    margin-top: 12px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 11px;
+}
+
+.footer-column strong {
+    margin-bottom: 5px;
+}
+
+.copyright {
+    grid-column: 1 / -1;
+    font-size: 10px;
+    margin-top: 15px;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 12px 4%;
+    }
+
+    .nav-menu {
+        gap: 18px;
+    }
+
+    .nav-menu a {
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 50px 5%;
+        gap: 30px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .venue-grid {
+        gap: 20px;
+    }
+
+    .venue-card {
+        min-height: 320px;
+    }
+
+    .facility-list {
+        gap: 4px;
+    }
+
+    .facility-list span {
+        font-size: 8px;
+    }
+
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 650px) {
+
+    .navbar {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .nav-menu {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+        overflow-x: auto;
+    }
+
+    .nav-menu a {
+        white-space: nowrap;
+        font-size: 10px;
+    }
+
+    .hero {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 40px 6%;
+    }
+
+    .hero h1 {
+        font-size: 29px;
+    }
+
+    .hero-description {
+        font-size: 12px;
+        margin-bottom: 22px;
+    }
+
+    .hero-buttons {
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .hero-image {
+        flex: auto;
+        height: 220px;
+        margin: 10px 10px 18px 0;
+        border-radius: 25px;
+        box-shadow: 10px 10px 0 #2c915c;
+    }
+
+    .catalog,
+    .matcher,
+    .about {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .section-heading h2 {
+        font-size: 25px;
+    }
+
+    .venue-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .venue-card {
+        min-height: 320px;
+    }
+
+    .venue-card > img {
+        height: 190px;
+    }
+
+    .facility-list span {
+        font-size: 10px;
+    }
+
+    .checkbox-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 18px 10px;
+    }
+
+    .contact-section {
+        grid-template-columns: 1fr;
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .benefit-grid {
+        grid-template-columns: 1fr;
+        gap: 42px;
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        margin-left: 4%;
+        margin-right: 4%;
+    }
+
+    .footer-brand {
+        grid-column: 1 / -1;
+    }
+
+}
